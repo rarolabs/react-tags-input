@@ -8,8 +8,7 @@
     "start": "webpack serve --config config/webpack.dev.js",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watchAll",
-    "test:ci": "npm test -- --coverage",
-    "postinstall": "sh ./.ci-bcgg30.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "test:ci": "npm test -- --coverage"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
